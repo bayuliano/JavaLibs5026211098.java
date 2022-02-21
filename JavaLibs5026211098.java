@@ -8,6 +8,9 @@ public class Main {
         String nama ="";
         String nrp ="";
         String departemen ="";
+        String fakultas ="";
+        String kelas ="";
+        String hari ="";
         String mata_kuliah ="";
         double tugas=0, ETS=0, EAS=0, Ntugas, NETS, NEAS, Ntotal;
 
@@ -15,6 +18,9 @@ public class Main {
         nama = JOptionPane.showInputDialog("masukkan nama anda");
         nrp = JOptionPane.showInputDialog("masukkan nrp anda");
         departemen = JOptionPane.showInputDialog("masukkan departemen anda");
+        fakultas = JOptionPane.showInputDialog("masukkan fakultas anda");
+        kelas = JOptionPane.showInputDialog("masukkan kelas anda");
+        hari = JOptionPane.showInputDialog("kuliah anda hari apa?");
         mata_kuliah =JOptionPane.showInputDialog("masukkan mata kuliah anda");
         tugas = Double.parseDouble(JOptionPane.showInputDialog("masukkan nilai tugas anda (0 - 100)"));
         ETS = Double.parseDouble((JOptionPane.showInputDialog("masukkan nilai ETS anda(0 - 100)")));
@@ -25,7 +31,7 @@ public class Main {
         NEAS = EAS*0.4;
         Ntotal = Ntugas + NEAS + NETS;
 
-        JOptionPane.showMessageDialog(null, "NILAI AKHIR MATA KULIAH ANDA \nnama      :" + nama +"\nnrp         :" + nrp +"\ndepartemen :" + departemen+"\nmata kuliah  :" + mata_kuliah +"\nnilai tugas (25%)   :" + Ntugas +"\nnilai ETS (35%)    :" + NETS +"\nnilai EAS (40%)   :" + NEAS +"\nnilai akhir  :" + Ntotal);
+        JOptionPane.showMessageDialog(null, "NILAI AKHIR MATA KULIAH ANDA \nnama      :" + nama +"\nnrp         :" + nrp +"\ndepartemen :" + departemen+"\nmata kuliah  :" + mata_kuliah +"\nfakultas  :" + fakultas +"\nkelas   :" +kelas +"\nhari   :" + hari +"\nnilai tugas (25%)   :" + Ntugas +"\nnilai ETS (35%)    :" + NETS +"\nnilai EAS (40%)   :" + NEAS +"\nnilai akhir  :" + Ntotal);
 
 
     }
